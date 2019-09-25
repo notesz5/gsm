@@ -1,12 +1,12 @@
 **Starting commands at first initialization:**
 
-> docker build . -t gsm/wildfly
-> docker-compose up
+1. docker build . -t gsm/wildfly
+2. docker-compose up
 
 **After MySQL init process is done, and /workdir/db/data is created:**
 
-> CTRL+C to stop process
-> docker-compose down
-> docker-compose up
+1. CTRL+C to stop process
+2. docker-compose down
+3. docker-compose up
 
-***Leave 8080 and 3306 ports open on your localhost!***
+**Leave _8080_ and _3306_ ports open on your localhost!**
