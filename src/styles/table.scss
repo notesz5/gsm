@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .loaderIcon {
+    padding-left: 0px !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 480px) {
+  .wrapper {
+    padding-top: 45px !important;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+    padding-left: 0px !important;
+  }
+}
+@media (min-width: 0px) and (max-width: 960px) {
+  tbody[class*="MuiTableBody-root"]
+    > tr[class*="MuiTableRow-root"]
+    > td.MuiTableCell-root[class*="MUIDataTableBodyCell-cellHide"][class$="datatables-noprint"] {
+    display: none !important;
+  }
+  tbody[class*="MuiTableBody-root"]
+    > tr[class*="MuiTableRow-root"]
+    > td.MuiTableCell-root[class*="MUIDataTableBodyCell-root"][class$="datatables-noprint"] {
+    width: 100% !important;
+    border-bottom: 0px !important;
+    padding-top: 20px !important;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 480px) {
+  .loaderIcon {
+    padding-left: 0px !important;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 375px) {
+  tbody[class*="MuiTableBody-root"]:first-child {
+    border-top: 0px !important;
+  }
+
+  .MuiTableRow-root > td[class*="MUIDataTableBodyCell-cellStackedSmall-"] {
+    width: calc(50% - 80px) !important;
+    font-weight: bold !important;
+    padding-left: 0px !important;
+    margin-left: 30px !important;
+  }
+
+  .MuiTableRow-root > td[class*="MUIDataTableBodyCell-stackedCommon-"] {
+    display: inline-flex;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .MuiTableRow-root > td[class*="MUIDataTableSelectCell-fixedHeaderCommon-"] {
+    // position: unset !important;
+    padding: 0px 0px 0px 0px !important;
+    z-index: 0 !important;
+  }
+
+  div[class*="MUIDataTable-responsiveStacked"] {
+    padding-top: 100px !important;
+  }
+
+  div[class*="MUIDataTableSearch-main"] {
+    justify-content: center !important;
+  }
+  div[class*="MUIDataTableFilterList-chip"] {
+    margin-bottom: 8px !important;
+  }
+
+  div[class*="MUIDataTableToolbar-left"] {
+    padding: 0px !important;
+  }
+  div[class*="MUIDataTableToolbar-actions"] {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    padding-right: 10px !important;
+  }
+
+  div[class*="MUIDataTableToolbarSelect-root"] {
+    flex: 0 auto !important;
+    top: 44px !important;
+    position: fixed !important;
+    width: 100% !important;
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+  }
+
+  div[class*="MUIDataTableToolbar-root"] {
+    display: flex !important;
+    justify-content: center !important;
+    padding: 0px !important;
+    position: fixed !important;
+    align-items: center !important;
+    width: 100%;
+    z-index: 20 !important;
+    border-bottom: solid 2px rgba(0, 0, 0, 0.15) !important;
+    background-color: white !important;
+    top: 44px;
+  }
+
+  div[class*="MUIDataTableFilterList-root"] {
+    position: relative !important;
+    top: 100px !important;
+    z-index: 19 !important;
+    display: flex !important;
+    justify-content: center !important;
+    margin: 0 !important;
+  }
+
+  div[class*="MUIDataTableSearch-main"] {
+    justify-content: center !important;
+  }
+  svg[class*="MUIDataTableSearch-searchIcon"] {
+    display: none !important;
+  }
+
+  div[class*="MUIDataTablePagination-toolbar"] > p:nth-child(2) {
+    display: none !important;
+  }
+  div[class*="MUIDataTablePagination-toolbar"] {
+    padding: 0px !important;
+  }
+
+  tr[class*="MuiTableRow-footer"] {
+    height: 52px !important;
+  }
+
+  td[class*="MuiTablePagination-root"] {
+    padding: 0px !important;
+    display: flex !important;
+    justify-content: center !important;
+    border-bottom: 0px !important;
+  }
+
+  button[class*="MUIDataTableSearch-clearIcon"] {
+    padding-right: 0px !important;
+  }
+
+  .wrapper {
+    padding-top: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  div.content.open > div.wrapper {
+    padding-left: 0px !important;
+  }
+
+  div.content.closed > div.wrapper {
+    padding-left: 0px !important;
+  }
+
+  .loaderIcon {
+    padding-left: 0px !important;
+  }
+
+  div[class*="MUIDataTableToolbar-filterPaper"] {
+    left: 16px !important;
+    top: 85px !important;
+    max-width: calc(100% - 32px) !important;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 425px) {
+  tbody[class*="MuiTableBody-root"]
+    > tr[class*="MuiTableRow-root"]
+    > td.MuiTableCell-root[class*="MUIDataTableBodyCell-cellHide"][class$="datatables-noprint"] {
+    display: none !important;
+  }
+}
+
+@media (max-width: 599.95px) {
+  div[class*="MUIDataTableToolbar-root"] {
+    display: flex !important;
+    padding-left: 0px !important;
+  }
+
+  div[class*="MUIDataTableToolbar-actions"] {
+    text-align: end !important;
+  }
+  div[class*="MUIDataTableToolbar-left"] {
+    padding: 0px !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .MuiTableRow-root > td[class*="MUIDataTableBodyCell-cellStackedSmall-"] {
+    width: calc(50% - 80px) !important;
+    font-weight: bold !important;
+  }
+
+  .MuiTableRow-root > td[class*="MUIDataTableBodyCell-stackedCommon-"] {
+    display: inline-flex;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .MuiTableRow-root > td[class*="MUIDataTableSelectCell-fixedHeaderCommon-"] {
+    position: unset !important;
+    padding: 0px 0px 0px 0px !important;
+  }
+
+  div[class*="MUIDataTableFilterList-chip"] {
+    margin-bottom: 8px;
+  }
+
+  div[class*="MUIDataTableSearch-main"] {
+    justify-content: center !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 959px) {
+  .MuiTableRow-root > td[class*="MUIDataTableBodyCell-cellStackedSmall-"] {
+    width: calc(50% - 80px) !important;
+    font-weight: bold !important;
+  }
+
+  .MuiTableRow-root > td[class*="MUIDataTableBodyCell-stackedCommon-"] {
+    display: inline-flex;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  div[class*="MUIDataTableFilterList-chip"] {
+    margin-bottom: 8px;
+  }
+
+  div[class*="MUIDataTableToolbar-filterPaper"] {
+    max-width: 35%;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  div[class*="MUIDataTableToolbar-filterPaper"] {
+    max-width: 25% !important;
+  }
+}
+
+div[class*="MUIDataTableFilterList-chip"] {
+  background-color: rgba(109, 179, 55, 0.2) !important;
+
+  svg[class*="MuiChip-deleteIcon"] {
+    color: rgba(0, 0, 0, 0.3) !important;
+  }
+}
+
+span[class*="MUIDataTableFilter-checkboxFormControlLabel"] {
+  margin-left: 0px !important;
+}
+
+h6[class*="MUIDataTableToolbar-titleText"] {
+  font-weight: bold !important;
+}
+
+.buyButton {
+  background-color: #337003 !important;
+  color: white !important;
+  // margin-left: 5px !important;
+
+  &:hover {
+    background-color: rgba(51, 112, 3, 0.85) !important;
+  }
+}
+
+.MuiTableCell-head {
+  font-weight: bold !important;
+}
+
+.MuiChip-root {
+  background-color: rgba(51, 112, 3, 0.18) !important;
+  border-color: rgba(109, 179, 55, 0.5) !important;
+}
+
+.MuiChip-icon {
+  color: #6db337 !important;
+}
+
+.usedCheckbox {
+  color: #6db337 !important;
+  vertical-align: middle !important;
+}
+
+.MuiTableCell-root {
+  text-align: center !important;
+  user-select: none !important;
+  border-bottom: 1px solid rgba(158, 158, 158, 0.5) !important;
+  font-family: 'Rubik', sans-serif !important;
+}
+
+.MuiMenuItem-root {
+  font-family: 'Rubik', sans-serif !important;
+}
+.MuiButton-root {}
+
+.MuiTypography-body2 {
+  font-family: 'Rubik', sans-serif !important;
+}
+
+.MuiTypography-body1 {
+  font-family: 'Rubik', sans-serif !important;
+}
+
+td[class*="MUIDataTableSelectCell"] {
+  background-color: transparent !important;
+}
+
+.MuiTableCell-root span[class*="MUIDataTableHeadCell-toolButton-"] {
+  justify-content: center !important;
+}
+
+.wrapper {
+  padding-top: 90px;
+  padding-right: 45px;
+  padding-bottom: 45px;
+  padding-left: 100px;
+}
+
+.sold {
+  background-color: rgba(255, 152, 0, 0.1) !important;
+  &:hover {
+    background-color: rgba(255, 152, 0, 0.05) !important;
+  }
+
+  td > div > span[class*="MUIDataTableSelectCell-checkboxRoot"] {
+    color: #ff9800 !important;
+
+    &:hover {
+      background-color: rgba(255, 152, 0, 0.15) !important;
+    }
+  }
+
+  td > .usedCheckbox {
+    color: #ff9800 !important;
+  }
+}
+
+.sold.Mui-selected {
+  background-color: rgba(255, 152, 0, 0.3) !important;
+}
+
+.inStock {
+  background-color: rgba(109, 179, 55, 0.1) !important;
+
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.05) !important;
+  }
+}
+
+.inStock.Mui-selected {
+  background-color: rgba(109, 179, 55, 0.3) !important;
+}
+.placeHolder {
+  height: 913px;
+}
+
+.MuiTypography-root {
+  user-select: none !important;
+}
+
+.partnerRow {
+  background-color: rgba(109, 179, 55, 0.1) !important;
+
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.05) !important;
+  }
+}
+
+.partnerRow.Mui-selected {
+  background-color: rgba(109, 179, 55, 0.3) !important;
+}
+
+.MuiTableRow-root {
+  height: 63px;
+}
+
+svg[class*="MUIDataTableSearch-searchIcon"] {
+  color: #6db337 !important;
+}
+
+button[class*="MUIDataTableToolbar-icon"] {
+  color: #6db337 !important;
+
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.15) !important;
+  }
+}
+
+span[class*="MUIDataTableSelectCell-checkboxRoot"] {
+  color: #6db337 !important;
+
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.15) !important;
+  }
+}
+
+span[class*="MUIDataTableFilter-checkboxIcon"] {
+  color: #6db337 !important;
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.15) !important;
+  }
+}
+
+button[class*="MUIDataTableFilter-resetLink"] {
+  color: #6db337 !important;
+
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.15) !important;
+  }
+}
+
+.MuiInput-underline:after {
+  border-bottom: 2px solid #6db337 !important;
+}
+
+.MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 1px solid rgba(109, 179, 55, 0.5) !important;
+}
+
+li[class*="MuiTablePagination-menuItem Mui-selected"] {
+  background-color: rgba(109, 179, 55, 0.5) !important;
+
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.5) !important;
+  }
+}
+
+li[class*="MuiTablePagination-menuItem"] {
+  width: 100% !important;
+  justify-content: center !important;
+
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.25);
+  }
+}
+
+button[class*="MUIDataTableSearch-clearIcon"] {
+  color: #f44336 !important;
+  &:hover {
+    background-color: rgba(244, 67, 54, 0.1) !important;
+  }
+}
+
+div[class*="MuiTablePagination-select"]:focus {
+  background-color: transparent !important;
+}
+
+#pagination-menu-list {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  padding: 0px !important;
+}
+
+#pagination-back.Mui-disabled {
+  color: rgba(109, 179, 55, 0.4) !important;
+}
+#pagination-next.Mui-disabled {
+  color: rgba(109, 179, 55, 0.4) !important;
+}
+
+.MuiTablePagination-selectIcon {
+  color: #6db337 !important;
+}
+
+.MuiIconButton-colorInherit {
+  color: #6db337 !important;
+
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.15) !important;
+  }
+}
+
+.customToolbarButons {
+  padding-right: 26px;
+}
+
+.MuiDialogTitle-root {
+  text-align: center !important;
+}
+
+.delDialogActions {
+  padding: 0px 24px 16px !important;
+}
+
+.delDialogButton {
+  width: 50% !important;
+}
+
+.cancelButton {
+  border: 1px solid rgba(244, 67, 54, 0.5) !important;
+  &:hover {
+    background-color: rgba(244, 67, 54, 0.1) !important;
+  }
+
+  span > span[class*="MuiButton-startIcon"] {
+    color: rgba(244, 67, 54, 1) !important;
+  }
+}
+.confirmButton {
+  border: 1px solid rgba(109, 179, 55, 0.5) !important;
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.1) !important;
+  }
+  span > span[class*="MuiButton-startIcon"] {
+    color: rgba(109, 179, 55, 1) !important;
+  }
+}
+
+.deleteIcon {
+  color: #f44336 !important;
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+
+.editIcon {
+  color: #6db337 !important;
+  &:hover {
+    background-color: transparent !important;
+  }
+}
+.MuiTypography-h6 {
+  font-family: 'Rubik', sans-serif !important;
+}
+
+body {
+  padding: 0px !important;
+}

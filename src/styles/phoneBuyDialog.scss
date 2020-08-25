@@ -1,0 +1,280 @@
+div[class*="MuiDialog-paper"] {
+  .phoneBuyListContainer {
+    margin: 0px !important;
+    height: 100% !important;
+    width: 100% !important;
+  }
+}
+
+div[class*="phoneBuyListContainer"] {
+  div[class*="MuiGrid-item"]:nth-child(1) {
+    height: calc(100% - 44px);
+    padding: 0px !important;
+  }
+  div[class*="MuiGrid-item"]:nth-child(2) {
+    height: 45px !important;
+    padding: 0px 12px 0px 0px !important;
+    margin-top: 24px !important;
+  }
+  div[class*="MuiGrid-item"]:nth-child(3) {
+    height: 45px !important;
+    padding: 0px 0px 0px 12px !important;
+    margin-top: 24px !important;
+  }
+}
+
+div[class*="phoneBuyListPaper"] {
+  display: flex;
+  flex-direction: column;
+  // height: calc(100% + 300px) !important;
+  height: 100% !important;
+}
+
+.phoneBuyListRow {
+  td {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  td:nth-child(5) {
+    padding-left: 5px !important;
+
+    button {
+      color: #337003 !important;
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+  }
+  td:nth-child(6) {
+    button {
+      &:hover {
+        background-color: transparent !important;
+      }
+    }
+  }
+}
+
+.phoneBuyDialogBuyButton {
+  color: white !important;
+}
+.phoneBuyDialogBuyButton[class*="Mui-disabled"] {
+  background-color: #9e9e9e !important;
+  color: white !important;
+}
+
+.addFabContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 63px;
+}
+
+.addFab {
+  // position: absolute !important;
+  // bottom: 15px !important;
+  // right: 15px !important;
+  background-color: rgba(51, 112, 3, 1) !important;
+  color: white !important;
+  margin-right: 15px !important;
+
+  &:hover {
+    background-color: rgba(51, 112, 3, 0.9) !important;
+  }
+}
+
+button[class*="phoneBuyDialogButton buyButton"] {
+  background-color: white !important;
+  color: black !important;
+  margin: 0px !important;
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.1) !important;
+  }
+  span > span[class*="MuiButton-startIcon"] {
+    color: rgba(109, 179, 55, 1) !important;
+  }
+}
+
+.MuiGrid-spacing-xs-3 {
+  width: 100% !important;
+  margin: 0px !important;
+}
+
+.buyDialogForm {
+  height: 100% !important;
+  margin: 0px !important;
+  div[class*="MuiGrid-container"] {
+    height: 100% !important;
+  }
+}
+
+.titlePaper {
+  display: flex !important;
+  width: 100% !important;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(109, 179, 55, 0.15) !important;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset !important;
+  border-radius: 4px !important;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.partnerFieldSwitchIcon {
+  color: #337003 !important;
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.15) !important;
+  }
+}
+
+.MuiAutocomplete-popupIndicator {
+  display: none !important;
+}
+
+.MuiAutocomplete-clearIndicator {
+  color: #f44336 !important;
+  &:hover {
+    background-color: rgba(244, 67, 54, 0.1) !important;
+  }
+}
+
+.MuiAutocomplete-option[data-focus="true"] {
+  background-color: rgba(109, 179, 55, 0.15) !important;
+}
+
+.MuiAutocomplete-listbox {
+  padding: 0px !important;
+}
+
+.MuiAutocomplete-option[aria-selected="true"] {
+  background-color: transparent !important;
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.15) !important;
+  }
+}
+.MuiAutocomplete-option[aria-selected="true"][data-focus="true"] {
+  background-color: rgba(109, 179, 55, 0.15) !important;
+}
+
+.buyDialogForm > .MuiGrid-root {
+  .MuiFormLabel-root.Mui-focused {
+    color: rgba(109, 179, 55, 1) !important;
+  }
+
+  fieldset[class*="PrivateNotchedOutline-root"] {
+    border-color: rgba(109, 179, 55, 0.5) !important;
+  }
+  //BRAND
+  div:nth-child(2) {
+    padding-left: 0px !important;
+    .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+      padding: 9px !important;
+    }
+  }
+  //TYPE
+  div:nth-child(3) {
+    padding-right: 0px !important;
+    .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+      padding: 9px !important;
+    }
+  }
+  //IMEI
+  div:nth-child(4) {
+    padding-left: 0px !important;
+  }
+  //BUYPRICE
+  div:nth-child(5) {
+    padding-right: 0px !important;
+  }
+  //USED
+  div:nth-child(6) {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  div:nth-child(8) {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+      padding: 9px 15px 9px 9px !important;
+    }
+  }
+  div:nth-child(9) {
+    padding-left: 0px !important;
+    padding-bottom: 0px;
+  }
+  div:nth-child(10) {
+    padding-right: 0px !important;
+    padding-bottom: 0px;
+  }
+  div:nth-child(11) {
+    padding-left: 0px !important;
+  }
+  div:nth-child(14) {
+    padding-right: 0px !important;
+  }
+  div:nth-child(15) {
+    padding-left: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  div:nth-child(16) {
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+  }
+}
+
+.phoneBuyDialogCancelButton {
+  height: 45px !important;
+  color: #f44336 !important;
+  border: 1px solid rgba(244, 67, 54, 0.5) !important;
+  &:hover {
+    background-color: rgba(244, 67, 54, 0.1) !important;
+  }
+}
+.phoneBuyDialogBuyButton {
+  height: 45px !important;
+  margin: 0 !important;
+}
+
+div[class*="numberFormat error"] {
+  label[class*="MuiInputLabel-root"] {
+    color: #f44336 !important;
+  }
+}
+
+.buyDialogUsedCheckBox {
+  color: #337003 !important;
+}
+
+.buyDialogFormSubmit {
+  color: white !important;
+  height: 45px !important;
+  background-color: #337003 !important;
+  &:hover {
+    background-color: rgba(51, 112, 3, 0.85) !important;
+  }
+}
+
+.buyDialogFormSubmit.Mui-disabled {
+  background-color: #9e9e9e !important;
+  color: white !important;
+}
+
+.phoneBuyDialog > .MuiDialog-container > .MuiPaper-root {
+  padding: 24px !important;
+}
+
+.errorText {
+  min-height: 1em;
+  text-align: left;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1em;
+  letter-spacing: 0.03333em;
+  font-size: 0.75rem;
+  margin: 8px 14px 0;
+  color: #f44336;
+}

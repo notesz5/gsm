@@ -1,0 +1,28 @@
+.blurredBox {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgba(33, 33, 33, 0.099);
+  backdrop-filter: blur(1px);
+  z-index: 150;
+}
+
+.tableLoader {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 151;
+  position: absolute;
+  width: 100%;
+}
+
+.loaderIcon {
+  padding-left: 55px;
+  padding-top: 45px;
+  width: 40px !important;
+  height: 40px !important;
+  stroke: black !important;
+  fill: black !important;
+}
