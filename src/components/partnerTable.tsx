@@ -28,7 +28,12 @@ export default function PartnerTable() {
     const partnerGetAll = process.env.REACT_APP_PARTNERS_GET_ALL_URL || "";
     const partnerDataResult: Partner[] = [];
 
-    fetch(partnerGetAll)
+    fetch(partnerGetAll, {
+      method: "GET",
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
+    })
       .then((resp) => resp.json())
       .then((data) => {
         data.forEach((item) => {

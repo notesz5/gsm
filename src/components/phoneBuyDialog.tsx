@@ -885,7 +885,10 @@ export default function PhoneBuyDialog(props: PhoneBuyDialogProps) {
 
     fetch(buyUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
       body: JSON.stringify(postData),
     })
       .then((res) => res.json())

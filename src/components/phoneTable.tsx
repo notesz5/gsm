@@ -85,7 +85,12 @@ export default function PhoneTable() {
     const deviceDataResult: Device[] = [];
     const partnerDataResult: Partner[] = [];
 
-    fetch(phoneGetAll)
+    fetch(phoneGetAll, {
+      method: "GET",
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
+    })
       .then((resp) => resp.json())
       .then((data) => {
         data.forEach((item) => {
@@ -135,7 +140,12 @@ export default function PhoneTable() {
         console.log(err);
       });
 
-    fetch(deviceGetAll)
+    fetch(deviceGetAll, {
+      method: "GET",
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
+    })
       .then((resp) => resp.json())
       .then((data) => {
         data.forEach((item) => {
@@ -147,7 +157,12 @@ export default function PhoneTable() {
         console.log(err);
       });
 
-    fetch(partnerGetAll)
+    fetch(partnerGetAll, {
+      method: "GET",
+      headers: {
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
+    })
       .then((resp) => resp.json())
       .then((data) => {
         data.forEach((item) => {

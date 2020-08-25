@@ -529,7 +529,10 @@ export default function PhoneEditDialog(props: PhoneEditDialogProps) {
 
     fetch(updateUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
       body: JSON.stringify(postable),
     }).catch((err) => {
       console.log(err);

@@ -385,7 +385,7 @@ function PartnerAddForm(props: PartnerAddFormProps) {
 interface PartnerAddDialogProps {
   addDialogOpen: boolean;
   handleDialogClose: () => void;
-  handleAddNewPartners: (partners: Partner[])  => void;
+  handleAddNewPartners: (partners: Partner[]) => void;
 }
 
 export default function PartnerAddDialog(props: PartnerAddDialogProps) {
@@ -470,11 +470,14 @@ export default function PartnerAddDialog(props: PartnerAddDialogProps) {
 
     postData.forEach((formValue, index) => {
       delete postData[index].index;
-    })
+    });
 
     fetch(addUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
       body: JSON.stringify(postData),
     })
       .then((res) => res.json())
@@ -496,7 +499,7 @@ export default function PartnerAddDialog(props: PartnerAddDialogProps) {
           newPartners.push(newPartnerData);
         });
 
-        props.handleAddNewPartners(newPartners)
+        props.handleAddNewPartners(newPartners);
         resetAddablePartners();
       })
       .catch((err) => {

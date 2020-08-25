@@ -274,7 +274,10 @@ export default function PartnerEditDialog(props: PartnerEditDialogProps) {
 
     fetch(updateUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
       body: JSON.stringify(values),
     }).catch((err) => {
       console.log(err);
