@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
+.phoneEditDialog > .MuiDialog-container > .MuiPaper-root {
+  padding: 24px !important;
+}
+
+.titlePaper {
+  display: flex !important;
+  width: 100% !important;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(109, 179, 55, 0.15) !important;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset !important;
+  border-radius: 4px !important;
+  justify-content: center;
+  margin-bottom: 12px;
+
+  .MuiTypography-h4 {
+    font-family: "Rubik", sans-serif !important;
+  }
+}
+
+.editDialogForm > .MuiGrid-root {
+  .inputField {
+    fieldset {
+      border-color: rgba(109, 179, 55, 0.5);
+    }
+    .MuiFormLabel-root.Mui-focused {
+      color: rgba(109, 179, 55, 1) !important;
+    }
+
+    .MuiFormLabel-root {
+      font-family: "Rubik", sans-serif !important;
+    }
+    .MuiFormLabel-root.Mui-error.Mui-focused {
+      color: #f44336 !important;
+    }
+
+    .MuiFormHelperText-root.Mui-error {
+      font-family: "Rubik", sans-serif !important;
+    }
+
+    .MuiInputBase-root.Mui-error {
+      fieldset {
+        border-color: #f44336 !important;
+      }
+    }
+  }
+
+  .inputFieldError {
+    .MuiFormLabel-root {
+      font-family: "Rubik", sans-serif !important;
+      color: #f44336 !important;
+    }
+
+    fieldset {
+      border-color: #f44336 !important;
+    }
+  }
+
+  div:nth-child(2) {
+    padding-left: 0px !important;
+    .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+      padding: 9px !important;
+    }
+  }
+  //TYPE
+  div:nth-child(3) {
+    padding-right: 0px !important;
+    .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+      padding: 9px !important;
+    }
+  }
+  div:nth-child(4) {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    div[class*="MuiFormControl-root"] {
+      div[class*="MuiInputBase-root"] {
+        input[class*="MuiInputBase-input"] {
+          text-align: center !important;
+        }
+      }
+    }
+  }
+  div:nth-child(5) {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+    text-align: center !important;
+  }
+
+  div:nth-child(6) {
+    padding-left: 0px !important;
+    .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+      padding: 9px !important;
+    }
+  }
+  div:nth-child(7) {
+    padding-right: 0px !important;
+    .MuiAutocomplete-inputRoot[class*="MuiOutlinedInput-root"] {
+      padding: 9px !important;
+    }
+  }
+
+  .cancelButtonGridItem {
+    height: 45px !important;
+    padding: 0px 12px 0px 0px !important;
+    margin-top: 24px !important;
+  }
+
+  .submitButtonGridItem {
+    height: 45px !important;
+    padding: 0px 0px 0px 12px !important;
+    margin-top: 24px !important;
+  }
+
+  div:nth-child(8) {
+    padding-left: 0px !important;
+  }
+  div:nth-child(9) {
+    padding-right: 0px !important;
+  }
+}

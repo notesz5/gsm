@@ -1,0 +1,60 @@
+
+
+version: '3.7'
+
+services:
+  # App backend service
+  backend:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    environment:
+      WILDFLY_USER: admin
+      WILDFLY_PASS: admin123
+      DB_NAME: gsm
+      DB_USER: root
+      DB_PASS: kis2kakas
+      DB_URI: db:3306
+    ports:
+        - "8080:8080"
+        - "9990:9990"
+    restart: always
+    depends_on:
+      - db
+    networks:
+      - backend
+      - frontend
+
+  # Frontend Service
+  frontend:
+    build:
+      context: ../client/
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    restart: always
+    depends_on:
+      - backend
+    networks:
+      - frontend
+
+  # Database Service (Mysql)
+  db:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MYSQL_DATABASE: gsm
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: kis2kakas
+      MYSQL_ROOT_PASSWORD: supersecret
+    volumes:
+      - ./workdir/db/init:/docker-entrypoint-initdb.d # init database
+      - ./workdir/db/data:/var/lib/mysql              # data storage
+    networks:
+      - backend
+
+networks:
+  backend:
+  frontend:

@@ -1,0 +1,64 @@
+@media (min-width: 0px) and (max-width: 480px) {
+  .sideBarOpen .MuiDrawer-paper {
+    width: 55px !important;
+  }
+
+  .sideBarClosed .MuiDrawer-paper { 
+    width: 0px !important;
+  }
+
+  .menuIcon {
+    position: fixed !important;
+    padding-bottom: 9px !important;
+  }
+}
+
+$drawerWidth: 190px;
+
+.sideBarClosed .MuiDrawer-paper {
+  background-color: #212121;
+  margin-top: 45px !important;
+  border-right: 0;
+  overflow: hidden;
+  width: 55px;
+  transition: width 0.2s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+}
+
+.sideBarOpen .MuiDrawer-paper {
+  background-color: #212121;
+  border-right: 0;
+  margin-top: 45px !important;
+  overflow: hidden;
+  width: $drawerWidth;
+  transition: width 0.2s cubic-bezier(0.82, 0.085, 0.395, 0.895);
+}
+
+.menuItem {
+  &:hover {
+    background-color: rgba(109, 179, 55, 0.25) !important;
+  }
+  color: #fff !important;
+  & .MuiListItemIcon-root {
+    color: #6db337;
+  }
+}
+
+.menuItem.active {
+  background-color: rgba(109, 179, 55, 0.25) !important;
+  & .MuiListItemIcon-root {
+    color: #fff;
+  }
+
+  
+
+}
+.menuIcon {
+  color: #fff !important;
+  z-index: 1101 !important;
+  margin-left: 4px !important;
+  border-radius: 0 !important;
+  position: fixed !important;
+  &:hover {
+    background-color: transparent !important;
+  }
+}
