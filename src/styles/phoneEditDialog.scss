@@ -1,13 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 .phoneEditDialog > .MuiDialog-container > .MuiPaper-root {
   padding: 24px !important;
 }
 
-.editDialogForm > .MuiGrid-root {
-  .MuiFormLabel-root.Mui-focused {
-    color: rgba(109, 179, 55, 1) !important;
+.titlePaper {
+  display: flex !important;
+  width: 100% !important;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgba(109, 179, 55, 0.15) !important;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15) inset !important;
+  border-radius: 4px !important;
+  justify-content: center;
+  margin-bottom: 12px;
+
+  .MuiTypography-h4 {
+    font-family: "Rubik", sans-serif !important;
   }
-  fieldset[class*="PrivateNotchedOutline-root"] {
-    border-color: rgba(109, 179, 55, 0.5) !important;
+}
+
+.editDialogForm > .MuiGrid-root {
+  .inputField {
+    fieldset {
+      border-color: rgba(109, 179, 55, 0.5);
+    }
+    .MuiFormLabel-root.Mui-focused {
+      color: rgba(109, 179, 55, 1) !important;
+    }
+
+    .MuiFormLabel-root {
+      font-family: "Rubik", sans-serif !important;
+    }
+    .MuiFormLabel-root.Mui-error.Mui-focused {
+      color: #f44336 !important;
+    }
+
+    .MuiFormHelperText-root.Mui-error {
+      font-family: "Rubik", sans-serif !important;
+    }
+
+    .MuiInputBase-root.Mui-error {
+      fieldset {
+        border-color: #f44336 !important;
+      }
+    }
+  }
+
+  .inputFieldError {
+    .MuiFormLabel-root {
+      font-family: "Rubik", sans-serif !important;
+      color: #f44336 !important;
+    }
+
+    fieldset {
+      border-color: #f44336 !important;
+    }
   }
 
   div:nth-child(2) {
@@ -64,7 +113,7 @@
     padding: 0px 0px 0px 12px !important;
     margin-top: 24px !important;
   }
-  
+
   div:nth-child(8) {
     padding-left: 0px !important;
   }

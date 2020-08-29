@@ -28,7 +28,7 @@ const menuItems = [
 
   {
     name: "Partners",
-    link: "/partners",
+    link: "/clients",
     Icon: PeopleIcon,
   },
 ];

@@ -84,7 +84,10 @@ export default function PartnerTable() {
 
     fetch(deleteUrl, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Bearer " + localStorage.getItem("token"),
+      },
       body: JSON.stringify(selectedRows),
     }).catch((err) => {
       console.log(err);
@@ -100,7 +103,7 @@ export default function PartnerTable() {
     {
       name: "name",
       label: "Name",
-      options: { filter: false, sort: false },
+      options: { filter: false, sort: true },
     },
     {
       name: "email",

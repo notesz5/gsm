@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+
 div[class*="MuiDialog-paper"] {
   .phoneBuyListContainer {
     margin: 0px !important;
@@ -26,7 +28,6 @@ div[class*="phoneBuyListContainer"] {
 div[class*="phoneBuyListPaper"] {
   display: flex;
   flex-direction: column;
-  // height: calc(100% + 300px) !important;
   height: 100% !important;
 }
 
@@ -70,9 +71,6 @@ div[class*="phoneBuyListPaper"] {
 }
 
 .addFab {
-  // position: absolute !important;
-  // bottom: 15px !important;
-  // right: 15px !important;
   background-color: rgba(51, 112, 3, 1) !important;
   color: white !important;
   margin-right: 15px !important;
@@ -118,6 +116,10 @@ button[class*="phoneBuyDialogButton buyButton"] {
   border-radius: 4px !important;
   justify-content: center;
   margin-bottom: 12px;
+
+  .MuiTypography-h4 {
+    font-family: "Rubik", sans-serif !important;
+  }
 }
 
 .partnerFieldSwitchIcon {
@@ -157,13 +159,43 @@ button[class*="phoneBuyDialogButton buyButton"] {
 }
 
 .buyDialogForm > .MuiGrid-root {
-  .MuiFormLabel-root.Mui-focused {
-    color: rgba(109, 179, 55, 1) !important;
+  .inputField {
+    fieldset {
+      border-color: rgba(109, 179, 55, 0.5);
+    }
+    .MuiFormLabel-root.Mui-focused {
+      color: rgba(109, 179, 55, 1) !important;
+    }
+
+    .MuiFormLabel-root {
+      font-family: "Rubik", sans-serif !important;
+    }
+    .MuiFormLabel-root.Mui-error.Mui-focused {
+      color: #f44336 !important;
+    }
+
+    .MuiFormHelperText-root.Mui-error {
+      font-family: "Rubik", sans-serif !important;
+    }
+
+    .MuiInputBase-root.Mui-error {
+      fieldset {
+        border-color: #f44336 !important;
+      }
+    }
   }
 
-  fieldset[class*="PrivateNotchedOutline-root"] {
-    border-color: rgba(109, 179, 55, 0.5) !important;
+  .inputFieldError {
+    .MuiFormLabel-root {
+      font-family: "Rubik", sans-serif !important;
+      color: #f44336 !important;
+    }
+
+    fieldset {
+      border-color: #f44336 !important;
+    }
   }
+
   //BRAND
   div:nth-child(2) {
     padding-left: 0px !important;
@@ -270,7 +302,7 @@ div[class*="numberFormat error"] {
 .errorText {
   min-height: 1em;
   text-align: left;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: "Rubik", sans-serif !important;
   font-weight: 400;
   line-height: 1em;
   letter-spacing: 0.03333em;

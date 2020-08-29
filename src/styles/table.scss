@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 @media (min-width: 0px) and (max-width: 320px) {
   .loaderIcon {
@@ -115,6 +115,7 @@
   div[class*="MUIDataTableSearch-main"] {
     justify-content: center !important;
   }
+
   svg[class*="MUIDataTableSearch-searchIcon"] {
     display: none !important;
   }
@@ -252,14 +253,37 @@ span[class*="MUIDataTableFilter-checkboxFormControlLabel"] {
   margin-left: 0px !important;
 }
 
-h6[class*="MUIDataTableToolbar-titleText"] {
+button[data-testid="Search-iconButton"] {
+  color: #6db337 !important;
+}
+
+button[data-testid="Filter Table-iconButton"] {
+  color: #6db337 !important;
+}
+
+span[data-testid="headcol-1"] {
+  justify-content: center !important;
+}
+span[data-testid="headcol-4"] {
+  justify-content: center !important;
+}
+span[data-testid="headcol-5"] {
+  justify-content: center !important;
+}
+span[data-testid="headcol-6"] {
+  justify-content: center !important;
+}
+span[data-testid="headcol-7"] {
+  justify-content: center !important;
+}
+
+.MuiTypography-h6 {
   font-weight: bold !important;
 }
 
 .buyButton {
   background-color: #337003 !important;
   color: white !important;
-  // margin-left: 5px !important;
 
   &:hover {
     background-color: rgba(51, 112, 3, 0.85) !important;
@@ -288,28 +312,23 @@ h6[class*="MUIDataTableToolbar-titleText"] {
   text-align: center !important;
   user-select: none !important;
   border-bottom: 1px solid rgba(158, 158, 158, 0.5) !important;
-  font-family: 'Rubik', sans-serif !important;
+  font-family: "Rubik", sans-serif !important;
 }
 
 .MuiMenuItem-root {
-  font-family: 'Rubik', sans-serif !important;
+  font-family: "Rubik", sans-serif !important;
 }
-.MuiButton-root {}
 
 .MuiTypography-body2 {
-  font-family: 'Rubik', sans-serif !important;
+  font-family: "Rubik", sans-serif !important;
 }
 
 .MuiTypography-body1 {
-  font-family: 'Rubik', sans-serif !important;
+  font-family: "Rubik", sans-serif !important;
 }
 
 td[class*="MUIDataTableSelectCell"] {
   background-color: transparent !important;
-}
-
-.MuiTableCell-root span[class*="MUIDataTableHeadCell-toolButton-"] {
-  justify-content: center !important;
 }
 
 .wrapper {
@@ -325,9 +344,8 @@ td[class*="MUIDataTableSelectCell"] {
     background-color: rgba(255, 152, 0, 0.05) !important;
   }
 
-  td > div > span[class*="MUIDataTableSelectCell-checkboxRoot"] {
+  .MuiCheckbox-root {
     color: #ff9800 !important;
-
     &:hover {
       background-color: rgba(255, 152, 0, 0.15) !important;
     }
@@ -377,19 +395,11 @@ td[class*="MUIDataTableSelectCell"] {
   height: 63px;
 }
 
-svg[class*="MUIDataTableSearch-searchIcon"] {
-  color: #6db337 !important;
+.MuiTypography-subtitle1 {
+  font-family: "Rubik", sans-serif !important;
 }
 
-button[class*="MUIDataTableToolbar-icon"] {
-  color: #6db337 !important;
-
-  &:hover {
-    background-color: rgba(109, 179, 55, 0.15) !important;
-  }
-}
-
-span[class*="MUIDataTableSelectCell-checkboxRoot"] {
+.MuiCheckbox-root {
   color: #6db337 !important;
 
   &:hover {
@@ -404,7 +414,37 @@ span[class*="MUIDataTableFilter-checkboxIcon"] {
   }
 }
 
-button[class*="MUIDataTableFilter-resetLink"] {
+.MuiPopover-paper {
+  button:nth-child(1) {
+    color: rgba(244, 67, 54, 1) !important;
+    &:hover {
+      background-color: rgba(244, 67, 54, 0.1) !important;
+    }
+  }
+}
+
+.MuiTooltip-popper {
+  display: none !important;
+}
+
+.MuiToolbar-root {
+  div:nth-child(1) {
+    div {
+      path[d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"] {
+        color: #6db337 !important;
+      }
+
+      button:nth-child(3) {
+        color: rgba(244, 67, 54, 1) !important;
+        &:hover {
+          background-color: rgba(244, 67, 54, 0.1) !important;
+        }
+      }
+    }
+  }
+}
+
+button[data-testid="filterReset-button"] {
   color: #6db337 !important;
 
   &:hover {
@@ -434,13 +474,6 @@ li[class*="MuiTablePagination-menuItem"] {
 
   &:hover {
     background-color: rgba(109, 179, 55, 0.25);
-  }
-}
-
-button[class*="MUIDataTableSearch-clearIcon"] {
-  color: #f44336 !important;
-  &:hover {
-    background-color: rgba(244, 67, 54, 0.1) !important;
   }
 }
 
@@ -524,7 +557,7 @@ div[class*="MuiTablePagination-select"]:focus {
   }
 }
 .MuiTypography-h6 {
-  font-family: 'Rubik', sans-serif !important;
+  font-family: "Rubik", sans-serif !important;
 }
 
 body {

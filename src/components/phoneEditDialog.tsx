@@ -175,6 +175,8 @@ function PhoneEditForm(props: PhoneEditFormProps) {
                 autoComplete
                 autoHighlight
                 autoSelect
+                freeSolo
+                className="inputField"
                 clearOnEscape
                 value={initialValues.gsmItemId.gsmDeviceId.brand}
                 onInputChange={(event, value) => {
@@ -211,6 +213,8 @@ function PhoneEditForm(props: PhoneEditFormProps) {
                 autoComplete
                 autoHighlight
                 clearOnEscape
+                freeSolo
+                className="inputField"
                 autoSelect
                 value={
                   !props.selectedBrand ? "" : values.gsmItemId.gsmDeviceId.type
@@ -247,8 +251,8 @@ function PhoneEditForm(props: PhoneEditFormProps) {
                       variant="outlined"
                       className={
                         touched.gsmItemId?.imei && errors.gsmItemId?.imei
-                          ? "numberFormat error"
-                          : ""
+                        ? "inputFieldError"
+                        : "inputField"
                       }
                       label="IMEI"
                       onBlur={() => setFieldTouched("gsmItemId.imei", true)}
@@ -283,6 +287,7 @@ function PhoneEditForm(props: PhoneEditFormProps) {
                 autoHighlight
                 autoSelect
                 clearOnEscape
+                className="inputField"
                 defaultValue={initialValues.gsmPartnerId.name}
                 onInputChange={(event, value) => {
                   setFieldValue("gsmPartnerId.name", value);
@@ -309,6 +314,7 @@ function PhoneEditForm(props: PhoneEditFormProps) {
                   autoHighlight
                   autoSelect
                   clearOnEscape
+                  className="inputField"
                   defaultValue={initialValues.gsmPartner2Id.name}
                   onInputChange={(event, value) => {
                     setFieldValue("gsmPartner2Id.name", value);
@@ -342,8 +348,8 @@ function PhoneEditForm(props: PhoneEditFormProps) {
                       variant="outlined"
                       className={
                         touched.buyPrice && errors.buyPrice
-                          ? "numberFormat error"
-                          : ""
+                          ? "inputFieldError"
+                          : "inputField"
                       }
                       label="Buy Price"
                       onBlur={() => setFieldTouched("buyPrice", true)}
@@ -374,8 +380,8 @@ function PhoneEditForm(props: PhoneEditFormProps) {
                         variant="outlined"
                         className={
                           touched.salePrice && errors.salePrice
-                            ? "numberFormat error"
-                            : ""
+                          ? "inputFieldError"
+                          : "inputField"
                         }
                         label="Sale Price"
                         onBlur={() => setFieldTouched("salePrice", true)}

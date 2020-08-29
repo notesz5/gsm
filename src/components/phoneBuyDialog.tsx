@@ -333,6 +333,7 @@ function PhoneBuyForm(props: PhoneBuyFormProps) {
                 autoSelect
                 clearOnEscape
                 freeSolo
+                className="inputField"
                 value={initialValues.gsmItemId.gsmDeviceId.brand}
                 onInputChange={(event, value) => {
                   handleBrandChange(value);
@@ -365,6 +366,7 @@ function PhoneBuyForm(props: PhoneBuyFormProps) {
                 id="gsmItemId.gsmDeviceId.type"
                 options={props.typesByBrand}
                 disabled={isSubmitting}
+                className="inputField"
                 autoComplete
                 autoHighlight
                 clearOnEscape
@@ -403,8 +405,8 @@ function PhoneBuyForm(props: PhoneBuyFormProps) {
                       variant="outlined"
                       className={
                         touched.gsmItemId?.imei && errors.gsmItemId?.imei
-                          ? "numberFormat error"
-                          : ""
+                          ? "inputFieldError"
+                          : "inputField"
                       }
                       label="IMEI"
                       onBlur={() => setFieldTouched("gsmItemId.imei", true)}
@@ -434,8 +436,8 @@ function PhoneBuyForm(props: PhoneBuyFormProps) {
                       variant="outlined"
                       className={
                         touched.buyPrice && errors.buyPrice
-                          ? "numberFormat error"
-                          : ""
+                        ? "inputFieldError"
+                        : "inputField"
                       }
                       label="Buy Price"
                       onBlur={() => setFieldTouched("buyPrice", true)}
@@ -475,6 +477,7 @@ function PhoneBuyForm(props: PhoneBuyFormProps) {
                       : "Search Partner..."
                   }
                   component={TextField}
+                  className="inputField"
                   fullWidth
                   variant="outlined"
                   InputProps={{
@@ -516,6 +519,7 @@ function PhoneBuyForm(props: PhoneBuyFormProps) {
                   autoSelect
                   clearOnEscape
                   freeSolo
+                  className="inputField"
                   value={initialValues.gsmPartnerId.name}
                   onInputChange={(event, value) => {
                     setFieldValue("gsmPartnerId.name", value);
@@ -579,6 +583,7 @@ function PhoneBuyForm(props: PhoneBuyFormProps) {
                     component={TextField}
                     fullWidth
                     variant="outlined"
+                    className="inputField"
                   />
                 </Grid>
                 <Grid item xs={12} sm={6}>
@@ -596,8 +601,8 @@ function PhoneBuyForm(props: PhoneBuyFormProps) {
                           className={
                             touched.gsmPartnerId?.phone &&
                             errors.gsmPartnerId?.phone
-                              ? "numberFormat error"
-                              : ""
+                            ? "inputFieldError"
+                            : "inputField"
                           }
                           label="Phone Number"
                           onBlur={() =>
@@ -632,10 +637,10 @@ function PhoneBuyForm(props: PhoneBuyFormProps) {
                           className={
                             touched.gsmPartnerId?.postalCode &&
                             errors.gsmPartnerId?.postalCode
-                              ? "numberFormat error"
-                              : ""
+                            ? "inputFieldError"
+                            : "inputField"
                           }
-                          label="Zip Code"
+                          label="Postal Code"
                           onBlur={() =>
                             setFieldTouched("gsmPartnerId.postalCode", true)
                           }
@@ -660,6 +665,7 @@ function PhoneBuyForm(props: PhoneBuyFormProps) {
                     component={TextField}
                     fullWidth
                     variant="outlined"
+                    className="inputField"
                   />
                 </Grid>
                 <Grid item xs={6} sm={3}>
@@ -669,6 +675,7 @@ function PhoneBuyForm(props: PhoneBuyFormProps) {
                     component={TextField}
                     fullWidth
                     variant="outlined"
+                    className="inputField"
                   />
                 </Grid>
                 <Grid item xs={6} sm={3}>
@@ -686,8 +693,8 @@ function PhoneBuyForm(props: PhoneBuyFormProps) {
                           className={
                             touched.gsmPartnerId?.streetNumber &&
                             errors.gsmPartnerId?.streetNumber
-                              ? "numberFormat error"
-                              : ""
+                            ? "inputFieldError"
+                            : "inputField"
                           }
                           label="Street Number"
                           onBlur={() =>

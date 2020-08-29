@@ -108,7 +108,7 @@ function PartnerEditForm(props: PartnerEditFormProps) {
                 component={TextField}
                 fullWidth
                 variant="outlined"
-                className="partnerNameField"
+                className="partnerNameField inputField"
               />
             </Grid>
 
@@ -119,6 +119,7 @@ function PartnerEditForm(props: PartnerEditFormProps) {
                 component={TextField}
                 fullWidth
                 variant="outlined"
+                className="inputField"
               />
             </Grid>
 
@@ -134,8 +135,8 @@ function PartnerEditForm(props: PartnerEditFormProps) {
                       value={props.field.value !== "" ? props.field.value : ""}
                       className={
                         touched.phone && errors.phone
-                          ? "numberFormat error"
-                          : ""
+                          ? "inputFieldError"
+                          : "inputField"
                       }
                       label="Phone Number"
                       onBlur={() => setFieldTouched("phone", true)}
@@ -161,8 +162,8 @@ function PartnerEditForm(props: PartnerEditFormProps) {
                       value={props.field.value !== "" ? props.field.value : ""}
                       className={
                         touched.postalCode && errors.postalCode
-                          ? "numberFormat error"
-                          : ""
+                          ? "inputFieldError"
+                          : "inputField"
                       }
                       label="Zip Code"
                       onBlur={() => setFieldTouched("postalCode", true)}
@@ -185,6 +186,7 @@ function PartnerEditForm(props: PartnerEditFormProps) {
                 component={TextField}
                 fullWidth
                 variant="outlined"
+                className="inputField"
               />
             </Grid>
 
@@ -195,6 +197,7 @@ function PartnerEditForm(props: PartnerEditFormProps) {
                 component={TextField}
                 fullWidth
                 variant="outlined"
+                className="inputField"
               />
             </Grid>
 
@@ -210,8 +213,8 @@ function PartnerEditForm(props: PartnerEditFormProps) {
                       value={props.field.value !== "" ? props.field.value : ""}
                       className={
                         touched.streetNumber && errors.streetNumber
-                          ? "numberFormat error"
-                          : ""
+                          ? "inputFieldError"
+                          : "inputField"
                       }
                       label="Street Number"
                       onBlur={() => setFieldTouched("streetNumber", true)}

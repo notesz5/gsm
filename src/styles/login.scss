@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 @media (min-width: 320px) and (max-width: 480px) {
   .paper {
@@ -64,18 +64,49 @@ body {
 }
 
 .textfield {
+
+  fieldset {
+    border-color: rgba(109, 179, 55, 0.5);
+  }
+
   &:hover fieldset {
-    border-color: #337003 !important;
+    border-color: rgba(109, 179, 55, 0.9)  !important;
+  }
+  &:hover .Mui-error fieldset {
+    border-color: #f44336 !important;
   }
 
-  & .Mui-focused fieldset {
-    border-color: #337003 !important;
+  .Mui-focused fieldset {
+    border-color:  rgba(109, 179, 55, 1) !important;
   }
 
-  & .MuiFormLabel-root {
-    color: #337003 !important;
+  .Mui-error.Mui-focused fieldset {
+    border-color: #f44336 !important;
   }
+
+  .MuiFormLabel-root {
+    font-family: "Rubik", sans-serif !important;
+  }
+  .MuiFormLabel-root.Mui-focused {
+    color: rgba(109, 179, 55, 1);
+  }
+  .Mui-error.MuiFormLabel-root {
+    color: #f44336 !important;
+    
+  }
+
+  .MuiFormHelperText-root {
+    font-family: "Rubik", sans-serif !important;
+  }
+
+  .MuiInputBase-input {
+    font-family: "Rubik", sans-serif !important;
+  }
+
+  
 }
+
+
 
 .icon {
   color: #337003;
@@ -107,7 +138,7 @@ body {
 }
 
 .signIn {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Rubik", sans-serif !important;
   margin: 0;
 }
 

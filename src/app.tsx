@@ -19,7 +19,7 @@ const App: React.FC = () => {
           <Route path="/" exact component={Login} />
           <PageLayout>
             <RouteWithAuth path="/phones" component={Phones} />
-            <RouteWithAuth path="/partners" component={Partners} />
+            <RouteWithAuth path="/clients" component={Partners} />
           </PageLayout>
         </Switch>
       </Router>

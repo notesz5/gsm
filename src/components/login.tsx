@@ -132,7 +132,7 @@ function Login(props: LogInProps) {
                   variant="outlined"
                   margin="normal"
                   name="user"
-                  label="Username *"
+                  label="Username"
                   component={TextField}
                   fullWidth
                   InputProps={{
@@ -149,7 +149,7 @@ function Login(props: LogInProps) {
                   margin="normal"
                   type={stateValues.showPassword ? "text" : "password"}
                   name="password"
-                  label="Password *"
+                  label="Password"
                   component={TextField}
                   fullWidth
                   InputProps={{
